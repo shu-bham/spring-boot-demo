@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:172.16.211.153}:3306/${MYSQL_DB:hpcms_db_new}
+    username: ${MYSQL_USERNAME:hpcms_qa}
+    password: ${MYSQL_PASSWORD:hpcms_qa}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
