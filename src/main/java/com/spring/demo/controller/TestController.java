@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(path = "/")
+@RequestMapping(path = "/api")
 public class TestController {
   @Autowired private TestRepository testRepository;
   @Autowired private CustomTestRepository customTestRepository;
